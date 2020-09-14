@@ -11,7 +11,15 @@ import SwiftUI
 struct TestsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(macOS)
+            MacOSMainView()
+            #else
+            IOSMainView()
+                .accentColor(Color(.systemPurple))
+            #endif
+        }
+        .commands {
+            SidebarCommands()
         }
     }
 }
