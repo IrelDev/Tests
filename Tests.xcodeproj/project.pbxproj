@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2BF9B732510DD8600C7E8F3 /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */; };
+		C2BF9B742510DD8600C7E8F3 /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */; };
+		C2BF9B772510ED5A00C7E8F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2BF9B752510ED5A00C7E8F3 /* README.md */; };
+		C2BF9B782510ED5A00C7E8F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2BF9B752510ED5A00C7E8F3 /* README.md */; };
+		C2BF9B792510ED5A00C7E8F3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2BF9B762510ED5A00C7E8F3 /* LICENSE */; };
+		C2BF9B7A2510ED5A00C7E8F3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C2BF9B762510ED5A00C7E8F3 /* LICENSE */; };
 		C2D2821A250F6656000A7F5B /* TestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28207250F664F000A7F5B /* TestsApp.swift */; };
 		C2D2821B250F6656000A7F5B /* TestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28207250F664F000A7F5B /* TestsApp.swift */; };
 		C2D2821E250F6656000A7F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D28209250F6656000A7F5B /* Assets.xcassets */; };
@@ -30,9 +36,16 @@
 		C2D28249250F67C4000A7F5B /* TestListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28244250F67C3000A7F5B /* TestListRowView.swift */; };
 		C2D2824A250F67C4000A7F5B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28245250F67C3000A7F5B /* TestView.swift */; };
 		C2D2824B250F67C4000A7F5B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28245250F67C3000A7F5B /* TestView.swift */; };
+		C2D2824D250F6C15000A7F5B /* TestTypeStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2824C250F6C15000A7F5B /* TestTypeStyleView.swift */; };
+		C2D2824E250F6C15000A7F5B /* TestTypeStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2824C250F6C15000A7F5B /* TestTypeStyleView.swift */; };
+		C2D28250250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2824F250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift */; };
+		C2D28251250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2824F250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProgressView.swift; sourceTree = "<group>"; };
+		C2BF9B752510ED5A00C7E8F3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C2BF9B762510ED5A00C7E8F3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C2D28207250F664F000A7F5B /* TestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsApp.swift; sourceTree = "<group>"; };
 		C2D28209250F6656000A7F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2D2820E250F6656000A7F5B /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +66,8 @@
 		C2D28243250F67C3000A7F5B /* TestListPinnedSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListPinnedSectionView.swift; sourceTree = "<group>"; };
 		C2D28244250F67C3000A7F5B /* TestListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListRowView.swift; sourceTree = "<group>"; };
 		C2D28245250F67C3000A7F5B /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		C2D2824C250F6C15000A7F5B /* TestTypeStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTypeStyleView.swift; sourceTree = "<group>"; };
+		C2D2824F250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChooseAnOptionStyleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +91,8 @@
 		C2D28201250F664E000A7F5B = {
 			isa = PBXGroup;
 			children = (
+				C2BF9B762510ED5A00C7E8F3 /* LICENSE */,
+				C2BF9B752510ED5A00C7E8F3 /* README.md */,
 				C2D28206250F664F000A7F5B /* Shared */,
 				C2D28210250F6656000A7F5B /* iOS */,
 				C2D28217250F6656000A7F5B /* macOS */,
@@ -143,6 +160,9 @@
 				C2D28243250F67C3000A7F5B /* TestListPinnedSectionView.swift */,
 				C2D28244250F67C3000A7F5B /* TestListRowView.swift */,
 				C2D28245250F67C3000A7F5B /* TestView.swift */,
+				C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */,
+				C2D2824C250F6C15000A7F5B /* TestTypeStyleView.swift */,
+				C2D2824F250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +245,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BF9B792510ED5A00C7E8F3 /* LICENSE in Resources */,
+				C2BF9B772510ED5A00C7E8F3 /* README.md in Resources */,
 				C2D2821E250F6656000A7F5B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BF9B7A2510ED5A00C7E8F3 /* LICENSE in Resources */,
+				C2BF9B782510ED5A00C7E8F3 /* README.md in Resources */,
 				C2D2821F250F6656000A7F5B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +276,9 @@
 				C2D2822D250F6723000A7F5B /* IOSTestListPinnedSectionView.swift in Sources */,
 				C2D2823D250F677A000A7F5B /* SystemImageTextView.swift in Sources */,
 				C2D28246250F67C4000A7F5B /* TestListPinnedSectionView.swift in Sources */,
+				C2BF9B732510DD8600C7E8F3 /* TestProgressView.swift in Sources */,
+				C2D28250250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift in Sources */,
+				C2D2824D250F6C15000A7F5B /* TestTypeStyleView.swift in Sources */,
 				C2D28230250F6723000A7F5B /* IOSFolderListView.swift in Sources */,
 				C2D2822E250F6723000A7F5B /* IOSTestListView.swift in Sources */,
 				C2D2821A250F6656000A7F5B /* TestsApp.swift in Sources */,
@@ -265,7 +292,10 @@
 				C2D2823E250F677A000A7F5B /* SystemImageTextView.swift in Sources */,
 				C2D28237250F6759000A7F5B /* MacOSFolderListView.swift in Sources */,
 				C2D28236250F6759000A7F5B /* MacOSTestListView.swift in Sources */,
+				C2D28251250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift in Sources */,
 				C2D2823C250F677A000A7F5B /* ImageModifier.swift in Sources */,
+				C2D2824E250F6C15000A7F5B /* TestTypeStyleView.swift in Sources */,
+				C2BF9B742510DD8600C7E8F3 /* TestProgressView.swift in Sources */,
 				C2D28247250F67C4000A7F5B /* TestListPinnedSectionView.swift in Sources */,
 				C2D28249250F67C4000A7F5B /* TestListRowView.swift in Sources */,
 				C2D2824B250F67C4000A7F5B /* TestView.swift in Sources */,
