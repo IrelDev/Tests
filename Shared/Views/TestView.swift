@@ -8,36 +8,54 @@
 import SwiftUI
 
 struct TestView: View {
-    @State var selection = 0
+    @State var selectedTestIndex = 0
+    var testsCompleted = 15
+    var progress: CGFloat = 15 / 50
+    var testCount = 50
+    
     var body: some View {
         VStack {
-            Text("Math test 10.06.20")
-                .font(.system(size: 40, weight: .bold))
-                .foregroundColor(.white)
-                .padding()
+            HStack {
+                Text("Swift final test 10.06.20")
+                    .lineLimit(2)
+                    .font(.system(size: 40, weight: .bold))
+                Spacer()
+            }.padding()
             Spacer()
             GeometryReader { reader in
                 HStack {
                     Spacer()
-                    TabView(selection: $selection) {
-                        ForEach(0..<50) { index in
+                    TabView(selection: $selectedTestIndex) {
+                        ForEach(0..<testCount) { index in
                             ZStack {
-                                Color(.systemPurple)
-                                Text("\(index)")
+                                Color(.systemGray6)
+                                TestTypeStyleView()
                             }
                         }
                     }
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                     .cornerRadius(25)
-                    .frame(width: reader.size.width / 1.2, height: reader.size.height / 1.2)
+                    .padding()
                     Spacer()
                 }
+                .position(x: reader.size.width / 2, y: reader.size.height / 2)
             }
+            VStack {
+                HStack {
+                    Text("Completion: \(testsCompleted)/\(testCount)")
+                        .frame(alignment: .leading)
+                    Spacer()
+                }
+                TestProgressView(fillColor: Color(.systemPurple), progress: progress)
+            }
+            .padding()
             Spacer()
         }
         .navigationBarTitle("", displayMode: .inline)
+        .navigationBarItems(trailing: Image(systemName: "ellipsis.circle").adoptToImageModifier(withSize: 16))
     }
 }
+
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
         TestView()
