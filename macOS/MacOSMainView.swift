@@ -10,11 +10,9 @@ import SwiftUI
 struct MacOSMainView: View {
     var body: some View {
         NavigationView {
-            Group {
-                FolderListView()
-                MacOSTestListView()
-                TestView()
-            }
+            FolderListView()
+            MacOSTestListView()
+            TestView()
         }
         .navigationTitle("")
     }
