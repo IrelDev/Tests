@@ -29,13 +29,18 @@ struct TestView: View {
                         ForEach(0..<testCount) { index in
                             ZStack {
                                 Color(.systemGray6)
-                                TestTypeStyleView()
+                                    .cornerRadius(25)
+                                if index % 2 == 0 {
+                                    TestTypeStyleView()
+                                } else {
+                                    TestChooseAnOptionStyleView()
+                                }
                             }
                         }
+                        .cornerRadius(25)
+                        .padding()
                     }
-                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-                    .cornerRadius(25)
-                    .padding()
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                     Spacer()
                 }
                 .position(x: reader.size.width / 2, y: reader.size.height / 2)
