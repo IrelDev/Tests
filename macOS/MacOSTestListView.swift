@@ -14,7 +14,7 @@ struct MacOSTestListView: View {
             if pinned > 0 {
                 Section(header: TestListPinnedSectionView()) {
                     ForEach(0..<pinned) { index in
-                        NavigationLink(destination: Text("Pinned distenation \(index)")) {
+                        NavigationLink(destination: TestView()) {
                             TestListRowView()
                         }
                     }
@@ -22,7 +22,7 @@ struct MacOSTestListView: View {
             }
             Section {
                 ForEach(0..<15) { index in
-                    NavigationLink(destination: Text("Distenation \(index)")) {
+                    NavigationLink(destination: TestView()) {
                         TestListRowView()
                     }
                 }

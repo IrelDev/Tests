@@ -16,7 +16,7 @@ struct IOSTestListView: View {
                 Section(header: IOSTestListPinnedSectionView(isPinnedSectionExpanded: $isPinnedSectionExpanded)) {
                     if isPinnedSectionExpanded {
                         ForEach(0..<pinned) { index in
-                            NavigationLink(destination: Text("Pinned")) {
+                            NavigationLink(destination: TestView()) {
                                 TestListRowView()
                             }
                         }
@@ -25,7 +25,7 @@ struct IOSTestListView: View {
             }
             Section {
                 ForEach(0..<15) { index in
-                    NavigationLink(destination: Text("Destination \(index)")) {
+                    NavigationLink(destination: TestView()) {
                         TestListRowView()
                     }
                 }
