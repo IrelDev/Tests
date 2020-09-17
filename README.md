@@ -1,6 +1,8 @@
 # Tests
 Create, Edit, Take and Share effective Tests on Mac, iPad, or iPhone
 
+There is no release yet but you can go to the [develop](https://github.com/IrelDev/Tests/tree/develop) branch and check the development process.
+
 ## License
 Tests app is available under the GNU GPL V3 LICENSE with **binary distribution restriction**, see the [LICENSE](LICENSE) file for more information.
 
