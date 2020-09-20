@@ -20,9 +20,9 @@ struct IOSFolderListView: View {
             }
             ImageTextComponentView(text: "Recently Deleted")
             ImageTextComponentView(text: "Custom Folder")
-        }
-        .onAppear {
-            self.isActive = false
+                .onAppear {
+                    self.isActive = false
+                }
         }
         if wasViewShown {
             list.listStyle(GroupedListStyle())
