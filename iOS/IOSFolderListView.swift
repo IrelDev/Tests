@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct IOSFolderListView: View {
+    @State var isActive = false
+    @State var wasViewShown = false
+    
     var body: some View {
-        List {
-            NavigationLink(destination: IOSTestListView()) {
+        let list = List {
+            NavigationLink(destination: IOSTestListView().onAppear {
+                self.wasViewShown = true
+            }, isActive: $isActive) {
                 ImageTextComponentView(text: "Tests")
             }
             ImageTextComponentView(text: "Recently Deleted")
             ImageTextComponentView(text: "Custom Folder")
         }
-        .listStyle(GroupedListStyle())
-        .navigationBarTitle("Folders")
-        .navigationBarItems(leading: Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 20), trailing: Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16))
+        .onAppear {
+            self.isActive = false
+        }
+        if wasViewShown {
+            list.listStyle(GroupedListStyle())
+                .navigationBarTitle("Folders")
+                .navigationBarItems(leading: Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 20), trailing: Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16))
+        } else {
+            list.opacity(0)
+                .onAppear {
+                    self.isActive = true
+                }
+        }
     }
 }
 
