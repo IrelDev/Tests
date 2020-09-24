@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct IOSTestListView: View {
-    @State var isPinnedSectionExpanded = true
     let pinned = 8
     var body: some View {
         List {
             if pinned > 0 {
-                Section(header: IOSTestListPinnedSectionView(isPinnedSectionExpanded: $isPinnedSectionExpanded)) {
-                    if isPinnedSectionExpanded {
-                        ForEach(0..<pinned) { index in
-                            NavigationLink(destination: TestView()) {
-                                TestListRowView()
-                            }
+                Section(header: TestListPinnedSectionView()) {
+                    ForEach(0..<pinned) { index in
+                        NavigationLink(destination: TestView()) {
+                            TestListRowView()
                         }
                     }
                 }

@@ -17,7 +17,6 @@
 		C2D2821B250F6656000A7F5B /* TestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28207250F664F000A7F5B /* TestsApp.swift */; };
 		C2D2821E250F6656000A7F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D28209250F6656000A7F5B /* Assets.xcassets */; };
 		C2D2821F250F6656000A7F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D28209250F6656000A7F5B /* Assets.xcassets */; };
-		C2D2822D250F6723000A7F5B /* IOSTestListPinnedSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28228250F6722000A7F5B /* IOSTestListPinnedSectionView.swift */; };
 		C2D2822E250F6723000A7F5B /* IOSTestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D28229250F6722000A7F5B /* IOSTestListView.swift */; };
 		C2D28230250F6723000A7F5B /* IOSFolderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2822B250F6723000A7F5B /* IOSFolderListView.swift */; };
 		C2D28231250F6723000A7F5B /* IOSMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D2822C250F6723000A7F5B /* IOSMainView.swift */; };
@@ -53,7 +52,6 @@
 		C2D28216250F6656000A7F5B /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D28218250F6656000A7F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2D28219250F6656000A7F5B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		C2D28228250F6722000A7F5B /* IOSTestListPinnedSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSTestListPinnedSectionView.swift; sourceTree = "<group>"; };
 		C2D28229250F6722000A7F5B /* IOSTestListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSTestListView.swift; sourceTree = "<group>"; };
 		C2D2822B250F6723000A7F5B /* IOSFolderListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSFolderListView.swift; sourceTree = "<group>"; };
 		C2D2822C250F6723000A7F5B /* IOSMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSMainView.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 			children = (
 				C2D2822C250F6723000A7F5B /* IOSMainView.swift */,
 				C2D2822B250F6723000A7F5B /* IOSFolderListView.swift */,
-				C2D28228250F6722000A7F5B /* IOSTestListPinnedSectionView.swift */,
 				C2D28229250F6722000A7F5B /* IOSTestListView.swift */,
 				C2D28211250F6656000A7F5B /* Info.plist */,
 			);
@@ -281,7 +278,6 @@
 				C2D2824A250F67C4000A7F5B /* TestView.swift in Sources */,
 				C2D28241250F67AE000A7F5B /* FolderListView.swift in Sources */,
 				C2D28248250F67C4000A7F5B /* TestListRowView.swift in Sources */,
-				C2D2822D250F6723000A7F5B /* IOSTestListPinnedSectionView.swift in Sources */,
 				C2D2823D250F677A000A7F5B /* SystemImageTextView.swift in Sources */,
 				C2D28246250F67C4000A7F5B /* TestListPinnedSectionView.swift in Sources */,
 				C2BF9B732510DD8600C7E8F3 /* TestProgressView.swift in Sources */,
@@ -488,7 +484,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = ireldev.Tests;
 				PRODUCT_NAME = Tests;
 				SDKROOT = macosx;
@@ -512,7 +508,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = ireldev.Tests;
 				PRODUCT_NAME = Tests;
 				SDKROOT = macosx;
