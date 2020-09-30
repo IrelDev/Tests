@@ -23,7 +23,6 @@ struct TestChooseAnOptionStyleView: View {
             }
             .padding()
             Spacer()
-            Spacer()
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(buttons, id: \.self) { button in
