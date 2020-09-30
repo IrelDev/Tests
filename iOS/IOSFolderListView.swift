@@ -27,7 +27,15 @@ struct IOSFolderListView: View {
         if wasViewShown {
             list.listStyle(GroupedListStyle())
                 .navigationBarTitle("Folders")
-                .navigationBarItems(leading: Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 20), trailing: Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16))
+                .navigationBarItems(leading: Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 20)
+                }), trailing: Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16)
+                }))
         } else {
             list.opacity(0)
                 .onAppear {

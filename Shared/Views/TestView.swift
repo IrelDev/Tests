@@ -57,9 +57,11 @@ struct TestView: View {
             Spacer()
         }
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarItems(trailing: Image(systemName: "ellipsis.circle").adoptToImageModifier(withSize: 16).contextMenu {
+        .navigationBarItems(trailing: Button(action: {
             
-        })
+        }, label: {
+            Image(systemName: "rectangle.expand.vertical").adoptToImageModifier(withSize: 16)
+        }))
     }
 }
 
