@@ -1,5 +1,5 @@
 # Tests
-Create, Edit, Take and Share effective Tests on Mac, iPad, or iPhone
+Create, Edit and Take impactful Tests on iPhone, iPad or Mac
 
 ## License
 Tests app is available under the GNU GPL V3 LICENSE with **binary distribution restriction**, see the [LICENSE](LICENSE) file for more information.
