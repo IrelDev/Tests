@@ -34,7 +34,7 @@ struct IOSFolderListView: View {
             } else if UIDevice.current.userInterfaceIdiom == .phone {
                 list.listStyle(GroupedListStyle())
                     .navigationBarTitle("Folders")
-                    .navigationBarItems(leading: NavigationLink(destination: IOSTestEditorView(), label: {
+                    .navigationBarItems(leading: Button(action: { presentFolderAlert() }, label: {
                         Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 16)
                     }),trailing: NavigationLink(destination: IOSTestEditorView(), label: {
                         Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16)
@@ -46,6 +46,21 @@ struct IOSFolderListView: View {
                     self.isActive = true
                 }
         }
+    }
+    //viewmodelfunc
+    func presentFolderAlert() {
+        let alert = UIAlertController(title: "Create Folder", message: "Enter folder name", preferredStyle: .alert)
+        alert.addTextField { (something) in
+            something.placeholder = "Folder name..."
+        }
+        let createAction = UIAlertAction(title: "Create", style: .default) { _ in
+            guard let textField = alert.textFields?.first, textField.text != "" else { return }
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+        alert.addAction(createAction)
+        alert.addAction(cancelAction)
+        
+        UIApplication.shared.windows.first?.rootViewController?.present(alert, animated: true)
     }
 }
 
