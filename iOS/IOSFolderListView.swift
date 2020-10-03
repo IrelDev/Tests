@@ -45,6 +45,8 @@ struct IOSFolderListView: View {
                 .onAppear {
                     self.isActive = true
                 }
+                .navigationBarTitle("Folders")
+                .navigationBarHidden(true)
         }
     }
     //viewmodelfunc
