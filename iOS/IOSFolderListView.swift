@@ -25,13 +25,21 @@ struct IOSFolderListView: View {
                 }
         }
         if wasViewShown {
-            list.listStyle(GroupedListStyle())
-                .navigationBarTitle("Folders")
-                .navigationBarItems(leading: NavigationLink(destination: IOSTestEditorView(), label: {
-                    Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 16)
-                }),trailing: NavigationLink(destination: IOSTestEditorView(), label: {
-                    Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16)
-                }))
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                list.listStyle(GroupedListStyle())
+                    .navigationBarTitle("Folders")
+                    .navigationBarItems(trailing: NavigationLink(destination: IOSTestEditorView(), label: {
+                        Image(systemName: "folder.badge.plus")
+                    }))
+            } else if UIDevice.current.userInterfaceIdiom == .phone {
+                list.listStyle(GroupedListStyle())
+                    .navigationBarTitle("Folders")
+                    .navigationBarItems(leading: NavigationLink(destination: IOSTestEditorView(), label: {
+                        Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 16)
+                    }),trailing: NavigationLink(destination: IOSTestEditorView(), label: {
+                        Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16)
+                    }))
+            }
         } else {
             list.opacity(0)
                 .onAppear {
