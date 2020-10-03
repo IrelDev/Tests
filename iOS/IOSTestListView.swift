@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct IOSTestListView: View {
+    @State var isPushedToTestEditorFromNavigationBar = false
     let pinned = 8
+    
     var body: some View {
+        ZStack {
+            NavigationLink(destination: IOSTestEditorView(), isActive: $isPushedToTestEditorFromNavigationBar, label: {}).hidden()
+        }
         List {
             if pinned > 0 {
                 Section(header: TestListPinnedSectionView()) {
@@ -31,9 +36,7 @@ struct IOSTestListView: View {
         .listRowBackground(Color(.systemGray6))
         .listStyle(GroupedListStyle())
         .navigationBarTitle("Tests")
-        .navigationBarItems(trailing: Button(action: {
-            
-        }, label: {
+        .navigationBarItems(trailing: Button(action: { isPushedToTestEditorFromNavigationBar = true }, label: {
             Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16)
         }))
     }

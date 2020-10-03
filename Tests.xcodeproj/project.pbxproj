@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C279FDBD2528426D00BE217F /* IOSTestEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279FDBC2528426D00BE217F /* IOSTestEditorView.swift */; };
+		C279FDBE2528426D00BE217F /* IOSTestEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279FDBC2528426D00BE217F /* IOSTestEditorView.swift */; };
 		C2BF9B732510DD8600C7E8F3 /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */; };
 		C2BF9B742510DD8600C7E8F3 /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */; };
 		C2BF9B772510ED5A00C7E8F3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C2BF9B752510ED5A00C7E8F3 /* README.md */; };
@@ -42,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C279FDBC2528426D00BE217F /* IOSTestEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTestEditorView.swift; sourceTree = "<group>"; };
 		C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProgressView.swift; sourceTree = "<group>"; };
 		C2BF9B752510ED5A00C7E8F3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C2BF9B762510ED5A00C7E8F3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -133,6 +136,7 @@
 				C2D2822C250F6723000A7F5B /* IOSMainView.swift */,
 				C2D2822B250F6723000A7F5B /* IOSFolderListView.swift */,
 				C2D28229250F6722000A7F5B /* IOSTestListView.swift */,
+				C279FDBC2528426D00BE217F /* IOSTestEditorView.swift */,
 				C2D28211250F6656000A7F5B /* Info.plist */,
 			);
 			path = iOS;
@@ -282,6 +286,7 @@
 				C2D28246250F67C4000A7F5B /* TestListPinnedSectionView.swift in Sources */,
 				C2BF9B732510DD8600C7E8F3 /* TestProgressView.swift in Sources */,
 				C2D28250250F6C3B000A7F5B /* TestChooseAnOptionStyleView.swift in Sources */,
+				C279FDBD2528426D00BE217F /* IOSTestEditorView.swift in Sources */,
 				C2D2824D250F6C15000A7F5B /* TestTypeStyleView.swift in Sources */,
 				C2D28230250F6723000A7F5B /* IOSFolderListView.swift in Sources */,
 				C2D2822E250F6723000A7F5B /* IOSTestListView.swift in Sources */,
@@ -302,6 +307,7 @@
 				C2BF9B742510DD8600C7E8F3 /* TestProgressView.swift in Sources */,
 				C2D28247250F67C4000A7F5B /* TestListPinnedSectionView.swift in Sources */,
 				C2D28249250F67C4000A7F5B /* TestListRowView.swift in Sources */,
+				C279FDBE2528426D00BE217F /* IOSTestEditorView.swift in Sources */,
 				C2D2824B250F67C4000A7F5B /* TestView.swift in Sources */,
 				C2D2821B250F6656000A7F5B /* TestsApp.swift in Sources */,
 				C2D28235250F6759000A7F5B /* MacOSMainView.swift in Sources */,

@@ -27,13 +27,9 @@ struct IOSFolderListView: View {
         if wasViewShown {
             list.listStyle(GroupedListStyle())
                 .navigationBarTitle("Folders")
-                .navigationBarItems(leading: Button(action: {
-                    
-                }, label: {
-                    Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 20)
-                }), trailing: Button(action: {
-                    
-                }, label: {
+                .navigationBarItems(leading: NavigationLink(destination: IOSTestEditorView(), label: {
+                    Image(systemName: "folder.badge.plus").adoptToImageModifier(withSize: 16)
+                }),trailing: NavigationLink(destination: IOSTestEditorView(), label: {
                     Image(systemName: "square.and.pencil").adoptToImageModifier(withSize: 16)
                 }))
         } else {
