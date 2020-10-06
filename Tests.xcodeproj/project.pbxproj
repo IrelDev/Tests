@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C270F6B3252C393800B6F9BF /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6B2252C393800B6F9BF /* BlurEffectView.swift */; };
-		C270F6B4252C393800B6F9BF /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6B2252C393800B6F9BF /* BlurEffectView.swift */; };
 		C270F6BA252C4B0900B6F9BF /* IOSTestEditorSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6B9252C4B0900B6F9BF /* IOSTestEditorSectionView.swift */; };
 		C270F6BB252C4B0900B6F9BF /* IOSTestEditorSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6B9252C4B0900B6F9BF /* IOSTestEditorSectionView.swift */; };
 		C270F6BF252C4CBC00B6F9BF /* IOSTestEditorTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6BE252C4CBB00B6F9BF /* IOSTestEditorTestView.swift */; };
 		C270F6C0252C4CBC00B6F9BF /* IOSTestEditorTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6BE252C4CBB00B6F9BF /* IOSTestEditorTestView.swift */; };
+		C270F6C4252C657C00B6F9BF /* CornerRadiusViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6C3252C657C00B6F9BF /* CornerRadiusViewModifier.swift */; };
+		C270F6C5252C657C00B6F9BF /* CornerRadiusViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6C3252C657C00B6F9BF /* CornerRadiusViewModifier.swift */; };
+		C270F6CC252C65F000B6F9BF /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6CB252C65F000B6F9BF /* BlurEffectView.swift */; };
+		C270F6CD252C65F000B6F9BF /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C270F6CB252C65F000B6F9BF /* BlurEffectView.swift */; };
 		C279FDBD2528426D00BE217F /* IOSTestEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279FDBC2528426D00BE217F /* IOSTestEditorView.swift */; };
 		C279FDBE2528426D00BE217F /* IOSTestEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279FDBC2528426D00BE217F /* IOSTestEditorView.swift */; };
 		C2BF9B732510DD8600C7E8F3 /* TestProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */; };
@@ -50,9 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C270F6B2252C393800B6F9BF /* BlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlurEffectView.swift; path = Shared/Components/BlurEffectView.swift; sourceTree = SOURCE_ROOT; };
 		C270F6B9252C4B0900B6F9BF /* IOSTestEditorSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTestEditorSectionView.swift; sourceTree = "<group>"; };
 		C270F6BE252C4CBB00B6F9BF /* IOSTestEditorTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTestEditorTestView.swift; sourceTree = "<group>"; };
+		C270F6C3252C657C00B6F9BF /* CornerRadiusViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CornerRadiusViewModifier.swift; path = iOS/Components/CornerRadiusViewModifier.swift; sourceTree = SOURCE_ROOT; };
+		C270F6CB252C65F000B6F9BF /* BlurEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
 		C279FDBC2528426D00BE217F /* IOSTestEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSTestEditorView.swift; sourceTree = "<group>"; };
 		C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProgressView.swift; sourceTree = "<group>"; };
 		C2BF9B752510ED5A00C7E8F3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -108,6 +111,15 @@
 			path = TestEditor;
 			sourceTree = "<group>";
 		};
+		C270F6CA252C65B600B6F9BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C270F6C3252C657C00B6F9BF /* CornerRadiusViewModifier.swift */,
+				C270F6CB252C65F000B6F9BF /* BlurEffectView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C2C2BB3C251239E80091AF66 /* TestStyles */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +164,7 @@
 		C2D28210250F6656000A7F5B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C270F6CA252C65B600B6F9BF /* Components */,
 				C2D2822C250F6723000A7F5B /* IOSMainView.swift */,
 				C2D2822B250F6723000A7F5B /* IOSFolderListView.swift */,
 				C2D28229250F6722000A7F5B /* IOSTestListView.swift */,
@@ -179,7 +192,6 @@
 				C2D28239250F677A000A7F5B /* ImageModifier.swift */,
 				C2D2823A250F677A000A7F5B /* SystemImageTextView.swift */,
 				C2BF9B722510DD8600C7E8F3 /* TestProgressView.swift */,
-				C270F6B2252C393800B6F9BF /* BlurEffectView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -297,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C270F6C4252C657C00B6F9BF /* CornerRadiusViewModifier.swift in Sources */,
 				C2D28231250F6723000A7F5B /* IOSMainView.swift in Sources */,
 				C2D2823B250F677A000A7F5B /* ImageModifier.swift in Sources */,
 				C2D2824A250F67C4000A7F5B /* TestView.swift in Sources */,
@@ -310,10 +323,10 @@
 				C279FDBD2528426D00BE217F /* IOSTestEditorView.swift in Sources */,
 				C2D2824D250F6C15000A7F5B /* TestTypeStyleView.swift in Sources */,
 				C270F6BA252C4B0900B6F9BF /* IOSTestEditorSectionView.swift in Sources */,
+				C270F6CC252C65F000B6F9BF /* BlurEffectView.swift in Sources */,
 				C2D28230250F6723000A7F5B /* IOSFolderListView.swift in Sources */,
 				C2D2822E250F6723000A7F5B /* IOSTestListView.swift in Sources */,
 				C2D2821A250F6656000A7F5B /* TestsApp.swift in Sources */,
-				C270F6B3252C393800B6F9BF /* BlurEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C270F6C5252C657C00B6F9BF /* CornerRadiusViewModifier.swift in Sources */,
 				C2D2823E250F677A000A7F5B /* SystemImageTextView.swift in Sources */,
 				C2D28237250F6759000A7F5B /* MacOSFolderListView.swift in Sources */,
 				C2D28236250F6759000A7F5B /* MacOSTestListView.swift in Sources */,
@@ -334,10 +348,10 @@
 				C279FDBE2528426D00BE217F /* IOSTestEditorView.swift in Sources */,
 				C2D2824B250F67C4000A7F5B /* TestView.swift in Sources */,
 				C270F6BB252C4B0900B6F9BF /* IOSTestEditorSectionView.swift in Sources */,
+				C270F6CD252C65F000B6F9BF /* BlurEffectView.swift in Sources */,
 				C2D2821B250F6656000A7F5B /* TestsApp.swift in Sources */,
 				C2D28235250F6759000A7F5B /* MacOSMainView.swift in Sources */,
 				C2D28242250F67AE000A7F5B /* FolderListView.swift in Sources */,
-				C270F6B4252C393800B6F9BF /* BlurEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
