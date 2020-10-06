@@ -11,11 +11,7 @@ struct TestListPinnedSectionView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
             HStack {
-                Image(systemName: "pin.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 12)
-                    .foregroundColor(Color(.systemGray))
+                Image(systemName: "pin.fill").adoptToImageModifier(withSize: 15, color: Color(.systemGray))
                 Text("Pinned")
                     .fontWeight(.semibold)
                     .font(.callout)
