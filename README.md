@@ -1,5 +1,5 @@
 # Tests
-Create, Edit, Take and Share effective Tests on Mac, iPad, or iPhone
+Create, Edit and Take impactful Tests on iPhone, iPad or Mac
 
 There is no release yet but you can go to the [develop](https://github.com/IrelDev/Tests/tree/develop) branch and check the development process.
 
